@@ -24,7 +24,7 @@ Hk 为我们提供了免费的容器服务，我们不应该滥用它，所以�
 点击上面紫色`Deploy to Hk`，会跳转到hk app创建页面，填上应用的名称、选择节点(建议用欧洲节点，美国节点会自动删除YouTube评论与点赞！)、按需修改部分参数和UUID后点击下面`deploy`开始创建部署应用  
 如出现错误，可以多尝试几次，待部署完成后页面底部会显示`Your app was successfully deployed` 
   * 点击Manage App可在Settings下的Config Vars项**查看和重新设置参数**  
-  * 点击Open app跳转域名即为heroku分配域名，格式为`app.herokuapp.com`，用于客户端  
+  * 点击Open app跳转域名即为hk分配域名，格式为`app.h*kuapp.com`，用于客户端  
   * 默认协议密码为`24b4b1e1-7a89-45f6-858c-242cf53b5bdb`，路径为`/ray`
 
 ## 客户端
@@ -49,7 +49,7 @@ CloudFlare Workers反代代码（分别用两个账号应用程序名（`协议`
 ```bash
 * 客户端下载：https://github.com/2dust/v8N/releases
 * 代理协议：vl 或 vm
-* 地址：app.herokuapp.com
+* 地址：app.hkuapp.com
 * 端口：443
 * 默认UUID：24b4b1e1-7a89-45f6-858c-242cf53b5bdb
 * vmess额外id：0
@@ -69,8 +69,8 @@ CloudFlare Workers反代代码（分别用两个账号应用程序名（`协议`
 <summary>使用Cloudflare的Workers来中转流量，单双日轮换反代代码(推荐)</summary>
 
 ```js
-const SingleDay = 'app1.herokuapp.com'
-const DoubleDay = 'app2.herokuapp.com'
+const SingleDay = 'app1.hkuapp.com'
+const DoubleDay = 'app2.hkuapp.com'
 addEventListener(
     "fetch",event => {
     
@@ -99,7 +99,7 @@ addEventListener(
 addEventListener(
   "fetch", event => {
     let url = new URL(event.request.url);
-    url.host = "app.herokuapp.com";
+    url.host = "app.hkuapp.com";
     let request = new Request(url, event.request);
     event.respondWith(
       fetch(request)
@@ -113,11 +113,11 @@ addEventListener(
 <summary>使用Cloudflare的Workers来中转流量，每五天轮换一遍式反代代码</summary>
 
 ```js
-const Day0 = 'app0.herokuapp.com'
-const Day1 = 'app1.herokuapp.com'
-const Day2 = 'app2.herokuapp.com'
-const Day3 = 'app3.herokuapp.com'
-const Day4 = 'app4.herokuapp.com'
+const Day0 = 'app0.hkuapp.com'
+const Day1 = 'app1.hkuapp.com'
+const Day2 = 'app2.hkuapp.com'
+const Day3 = 'app3.hkuapp.com'
+const Day4 = 'app4.hkuapp.com'
 addEventListener(
     "fetch",event => {
     
@@ -152,13 +152,13 @@ addEventListener(
 <summary>使用Cloudflare的Workers来中转流量，一周轮换反代代码</summary>
 
 ```js
-const Day0 = 'app0.herokuapp.com'
-const Day1 = 'app1.herokuapp.com'
-const Day2 = 'app2.herokuapp.com'
-const Day3 = 'app3.herokuapp.com'
-const Day4 = 'app4.herokuapp.com'
-const Day5 = 'app5.herokuapp.com'
-const Day6 = 'app6.herokuapp.com'
+const Day0 = 'app0.hkuapp.com'
+const Day1 = 'app1.hkuapp.com'
+const Day2 = 'app2.hkuapp.com'
+const Day3 = 'app3.hkuapp.com'
+const Day4 = 'app4.hkuapp.com'
+const Day5 = 'app5.hkuapp.com'
+const Day6 = 'app6.huapp.com'
 addEventListener(
     "fetch",event => {
     
