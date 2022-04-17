@@ -6,7 +6,7 @@
 
 ## 概述
 
-Heroku 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜做为长期翻墙使用。
+Hk 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜做为长期翻墙使用。
 - [x] 支持VM和VL两种协议
 - [x] 支持自定义websocket路径
 - [x] 伪装首页（3D元素周期表）
@@ -21,7 +21,7 @@ Heroku 为我们提供了免费的容器服务，我们不应该滥用它，所�
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/Zileezi88/hkv2) 
 
-点击上面紫色`Deploy to Heroku`，会跳转到hk app创建页面，填上应用的名称、选择节点(建议用欧洲节点，美国节点会自动删除YouTube评论与点赞！)、按需修改部分参数和UUID后点击下面`deploy`开始创建部署应用  
+点击上面紫色`Deploy to Hk`，会跳转到hk app创建页面，填上应用的名称、选择节点(建议用欧洲节点，美国节点会自动删除YouTube评论与点赞！)、按需修改部分参数和UUID后点击下面`deploy`开始创建部署应用  
 如出现错误，可以多尝试几次，待部署完成后页面底部会显示`Your app was successfully deployed` 
   * 点击Manage App可在Settings下的Config Vars项**查看和重新设置参数**  
   * 点击Open app跳转域名即为heroku分配域名，格式为`app.herokuapp.com`，用于客户端  
