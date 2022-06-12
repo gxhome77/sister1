@@ -12,7 +12,7 @@
     },
     "UUID": {
       "description": "用户的主ID",
-      "value": "24b4b1e1-7a89-45f6-858c-242cf53b5bdb",
+      "value": "cd8e9377-c457-40c1-84de-4df42f66a738",
       "required": false
     },
     "WS_PATH": {
@@ -21,8 +21,8 @@
       "required": true
     }
   },
-  "website": "https://github.com/Lbingyi/HerokuXray",
-  "repository": "https://github.com/Lbingyi/HerokuXray",
+  "website": "https://github.com/gxhome77/sister1",
+  "repository": "https://github.com/gxhome77/sister1",
   "stack": "container",
   "features": [
     "runtime-dyno-metadata"
